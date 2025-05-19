@@ -419,3 +419,94 @@ footer {
         margin-bottom: 64px;
     }
 }
+@media(max-width: 768px){
+    header{
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 16px;
+        gap: 32px;
+    }
+    header menu{
+        width: 100vw; /*Vw é com base a altura da tela */
+        height: 64px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        z-index: 999;
+        color: #fff;
+        justify-content: space-evenly;
+        gap: 12px;
+        font-size: 16px;
+    }
+    section{
+        padding: 20px;
+    }
+    .home{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        grid-template-rows: none;
+        height: 568px;
+        background-image: url(./img/background-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: end;
+        padding: 0;
+    }
+    .hero img{
+        display: none;
+    }
+    .hero h2{
+        font-size: 32px;
+        width: 248px;
+        height: 192px;
+        margin: 0;
+        left: 0;
+       
+    }
+    .home .container-produtos{
+        display: none;
+    }
+    .container-produtos .pizza{
+        width: 100%;
+    }
+    .container-produtos .pizza img{
+        width: 100%;
+    }
+    .container-produtos .pizza:nth-child(2), /*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(3) ,/*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(4), /*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(5), /*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(6), /*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(7) {/*nth remove o item desejador*/
+        display: none;
+    } 
+    .pizza.bebida{
+        width: auto;
+        align-items: center;
+    }
+    .cardapio{
+        height: auto;
+        justify-content: center;
+        gap: 24px;
+    }
+    .cardapio a{
+        display: none;
+    }
+    .servicos p{
+        display: none;
+    }
+    .cardapio h4{
+        justify-content: center;
+        align-items: center;
+    }
+    .contatos-item.social{
+        display: none;
+    }
+}
