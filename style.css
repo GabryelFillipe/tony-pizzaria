@@ -366,5 +366,56 @@ footer {
     .home .container-produtos{
         display: none;
     }
-
+    .container-produtos{
+        gap: 16px;
+    }
+    .container-produtos .pizza{
+        width: 100%;
+    }
+    .container-produtos .pizza img{
+        width: 100%;
+    }
+    .container-produtos .pizza:nth-child(3), /*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(4) ,/*nth remove o item desejador*/
+    .container-produtos .pizza:nth-child(5) {/*nth remove o item desejador*/
+        display: none;
+    } 
+   .pizza.bebida{
+    width: auto;
+    }
+    .cardapio{
+        justify-content: center;
+        gap: 24px;
+    }
+    .opcoes-servicos{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .servico-card{
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    .servico-card p {
+        width: 60%;
+    }
+    .contatos-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+        justify-content: center;
+        
+    }
+    .contatos-item{
+        padding: 0;
+    }
+    .contatos-item:nth-child(2){
+        display: none;
+    }
+    .contatos-item.social{
+        align-items: end;
+    }
+    .creditos{
+        margin-bottom: 64px;
+    }
 }
