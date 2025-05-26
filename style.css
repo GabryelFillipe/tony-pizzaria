@@ -452,12 +452,16 @@ footer {
         background-image: url(./img/background-mobile.svg);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
     .hero{
         flex-direction: column-reverse;
-        align-items: center;
+        align-items: start;
         justify-content: end;
         padding: 0;
+        left: 0;
+        padding-bottom: 40px;
+        padding-left: 12px;
     }
     .hero img{
         display: none;
@@ -487,9 +491,19 @@ footer {
     .container-produtos .pizza:nth-child(7) {/*nth remove o item desejador*/
         display: none;
     } 
+    .container-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
     .pizza.bebida{
         width: auto;
+        display: flex;
         align-items: center;
+        justify-items: center;
+        align-items: center;
+        padding: 0;
     }
     .cardapio{
         height: auto;
@@ -507,6 +521,7 @@ footer {
         align-items: center;
     }
     .contatos-item.social{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 }
