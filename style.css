@@ -355,6 +355,7 @@ footer {
     header li:hover{
         color: var(--primary-color);
     }
+     
     .home{
         grid-template-rows: none;
     }
@@ -426,6 +427,11 @@ footer {
         left: 0;
         top: 16px;
         gap: 32px;
+        padding: 0;
+        font-size: 24px;
+    }
+    header img {
+        filter: brightness(0) invert(1); /* Transforma a imagem (SVG) em branco */
     }
     header menu{
         width: 100vw; /*Vw é com base a altura da tela */
@@ -440,6 +446,9 @@ footer {
         gap: 12px;
         font-size: 16px;
     }
+    header button img{
+        filter: none;
+    }
     section{
         padding: 20px;
     }
@@ -449,7 +458,9 @@ footer {
         padding: 0;
         grid-template-rows: none;
         height: 568px;
-        background-image: url(./img/background-mobile.svg);
+        background-image:url(./img/background-mobile.svg);
+        background-color: #F07807;
+        opacity: 0.9;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -462,6 +473,7 @@ footer {
         left: 0;
         padding-bottom: 40px;
         padding-left: 12px;
+        color: #fff;
     }
     .hero img{
         display: none;
@@ -472,7 +484,9 @@ footer {
         height: 192px;
         margin: 0;
         left: 0;
-       
+    }
+    .hero span{
+        background-color: #fff;
     }
     .home .container-produtos{
         display: none;
@@ -516,12 +530,35 @@ footer {
     .servicos p{
         display: none;
     }
+    footer{
+        height: 587px;
+        padding: 0;
+        gap: 0;
+    }
+    .contatos-container{
+        gap: 30px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0;
+    }
     .cardapio h4{
         justify-content: center;
         align-items: center;
     }
-    .contatos-item.social{
-        display: flex;
-        flex-direction: column;
+    .contatos-item.contatos-item.social menu{
+        flex-direction: row;
     }
+     .contatos-item.social{
+        flex-direction: row;
+        justify-content: center;  
+        padding: 0;
+        margin: 0;
+    }
+    .creditos{
+        font-size: 12px;
+        margin-left: 12px;
+        width: 350px;
+        text-align: center;
+    }
+    
 }
